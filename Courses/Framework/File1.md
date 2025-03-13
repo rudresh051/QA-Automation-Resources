@@ -20,3 +20,27 @@ which is **already** written or available
 
 * Using the **existing** code (reusing the code) will require **less** or **no testing** since the
 existing code is not new and its already in use.
+
+* This will save much of team time instead of reinventing the wheel !!!
+
+2. SCALABLE - 
+* Frameworks written should be scalable, meaning it should be used from small to
+bigger proiect
+* Framework should be scaled to support multiple technologies and tools.
+* Technologies can be web or windows or even service based
+
+3. MAINTAINABLE - 
+
+* Framework should be easily maintainable, meaning, the code need to be segregated
+as a logical groups of same type (classes) and functionalities (methods)
+    * Something like commenting on each codes
+* Each and every code in framework should be documented, so that, duplicate code
+should will not emerge as a result lack of knowledge on existing code.
+* Framework should be different entity from that of test proiect, so that, changes to
+framework will go to framework proiect whereas changes to test goes to test proiect.
+
+4. WORKABLE -
+ 
+* Framework should be usable by the team.
+* Framework should be pluggable and even less knowledge automation test engineer
+should work with code using the framework methods
