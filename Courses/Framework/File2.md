@@ -93,3 +93,14 @@ YES
 * Jenkins
 
 ### Starting our framework design in Intellij
+
+## Refactoring
+
+Refactoring code to meet industry standard
+
+more meaningful -  
+
+![alt text](image-7.png)
+
+In selenium we have something
+org.openqa.selenium
