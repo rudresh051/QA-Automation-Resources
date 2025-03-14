@@ -1,0 +1,6 @@
+{
+    "markdown.validate.enabled": true,
+    "markdownlint.config": {
+        
+    }
+}
