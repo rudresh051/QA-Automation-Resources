@@ -127,6 +127,7 @@ But all the above tools has one language in common (at least as one of the) whic
 Gherkin (which we will discuss next)
 
 ### PAGE OBJECT MODEL
+
 Each webpage Ul Will have different obiects (Ul Elements) to interact.
 
 These obiects are identified and written in the code (Java or along with their identification
