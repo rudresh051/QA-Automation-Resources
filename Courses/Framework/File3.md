@@ -67,3 +67,14 @@ page will return another page (which is expected) can be maintained in POM
 * Creating our first Page Object Class
 * Creating objects for the page UI
 * Initialize the PageFactory()
+
+
+## Page Object Model Simplicity
+
+### Page Initialization with Base Class
+
+Instead of initializing page in each class lets try to create a **base abstract class**
+
+This makes code much simpler and easier to understand. At the same  
+times, we introduce some standard to be followed in our code while  
+starting to code with page object model.
