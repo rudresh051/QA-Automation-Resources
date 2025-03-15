@@ -49,3 +49,21 @@ public class LoginTest {
 }
 
 ```
+
+## Page Object Model (POM)
+
+POM is mainly used to  
+
+* Reduce the number of duplicate code which does same operation
+* Maintain object in separate class file  
+* Improved readability of code (as objects will have their identification attribute set)
+* Will have handle of each page using its instance
+* Establish the relation between each pages directly in code, so that performing an operation in one  
+page will return another page (which is expected) can be maintained in POM
+* In order to support POM pattern, Web driver support library classes called PageFactory
+
+### Setting up Project ready with POM
+
+* Creating our first Page Object Class
+* Creating objects for the page UI
+* Initialize the PageFactory()
