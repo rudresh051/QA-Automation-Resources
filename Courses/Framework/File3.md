@@ -87,7 +87,7 @@ Why do we never have time to do it right, but always have time to do it over?
 ### Webdriver Object
 
 Many times, we try to pass the WebDriver object over and over again  
-from one c/assto another by the means of constructors or passing it  
+from one class to another by the means of constructors or passing it  
 as a parameter in the method where it require driver instance.
 
 It's always a good idea in Programming to **Stop and Think for a second, to do it right**
@@ -98,3 +98,13 @@ How?
   * Create a static base class
   * Create a static property (for WebDriver)
   * Try to use that property for framework life cycle
+
+## Page Navigation in Page Object Model
+
+Using Page Navigation we can establish relationship between each  
+pages, so that, anytime while an operation is performed on one  
+method it mayor maynot(depends) returns a page object
+
+This will ensure the business logic embedded in our test code and won't loose the behavior of our application.
+
+## Page Navigation without Generics
