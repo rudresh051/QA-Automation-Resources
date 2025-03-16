@@ -68,8 +68,9 @@ page will return another page (which is expected) can be maintained in POM
 * Creating objects for the page UI
 * Initialize the PageFactory()
 
-
 ## Page Object Model Simplicity
+
+A Good way to stay flexible is to write less code. -- Pragmatic Programmer
 
 ### Page Initialization with Base Class
 
@@ -78,3 +79,22 @@ Instead of initializing page in each class lets try to create a **base abstract 
 This makes code much simpler and easier to understand. At the same  
 times, we introduce some standard to be followed in our code while  
 starting to code with page object model.
+
+## Handling WebDriver Instance Object
+
+Why do we never have time to do it right, but always have time to do it over?
+
+### Webdriver Object
+
+Many times, we try to pass the WebDriver object over and over again  
+from one c/assto another by the means of constructors or passing it  
+as a parameter in the method where it require driver instance.
+
+It's always a good idea in Programming to **Stop and Think for a second, to do it right**
+
+How?
+
+* Java
+  * Create a static base class
+  * Create a static property (for WebDriver)
+  * Try to use that property for framework life cycle
