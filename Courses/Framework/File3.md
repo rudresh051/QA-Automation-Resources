@@ -108,3 +108,30 @@ method it mayor maynot(depends) returns a page object
 This will ensure the business logic embedded in our test code and won't loose the behavior of our application.
 
 ## Page Navigation without Generics
+
+
+## Lectur 19 - Page Navigation with Generics
+
+What does it really means?
+
+We are going to address the problem which we faced with **types** in previous lecture
+
+WE WILL FIX ALL THE BOXING AND
+UNBOXING ISSUES USING GENERICS
+
+GENERICS?
+
+### Generics in Java 
+
+JDK 5.0 introduces several new extensions to the Java programming
+language. One of these is the introduction of generics.
+
+Generics allow you to abstract over types meaning generics
+enable types (classes and interfaces) to be parameters when defining
+classes, interfaces and methods.
+
+Much like the more familiar formal parameters used in method
+declarations, type parameters provide a way for you to re-use the
+same code with different inputs. The difference is that the inputs to
+formal parameters are values, while the inputs to type parameters are
+types.
