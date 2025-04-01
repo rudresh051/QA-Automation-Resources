@@ -135,3 +135,16 @@ declarations, type parameters provide a way for you to re-use the
 same code with different inputs. The difference is that the inputs to
 formal parameters are values, while the inputs to type parameters are
 types.
+
+In test automation, we often create methods that work with **different types of web elements** (buttons,   
+text fields, dropdowns). Instead of writing separate methods for each element type, generics allow us   
+to write a single method that works for all elements dynamically.
+
+```java
+public <T> void clickElement(T element) {
+    element.click();
+}
+```
+
+Here, **<T>** is a generic type, meaning this method can work with **any element type**—whether it’s a 
+WebElement, Button, or TextField. This makes our automation code **cleaner, reusable, and maintainable.**
