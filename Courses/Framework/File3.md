@@ -148,3 +148,64 @@ public <T> void clickElement(T element) {
 
 Here, **<T>** is a generic type, meaning this method can work with **any element type**—whether it’s a 
 WebElement, Button, or TextField. This makes our automation code **cleaner, reusable, and maintainable.**
+
+* Without generics
+
+```java
+List list = new ArrayList();
+list.add("Hello");
+String s = (String) list.get(0); // Requires explicit casting
+```
+
+* With generics
+
+```java
+List<String> list = new ArrayList<>();
+list.add("Hello");
+String s = list.get(0); // No casting needed, type safety ensured
+```
+
+* you can define a generic method that works with any data type.
+
+Here, <T> represents a type parameter, allowing the method to handle any type.
+```
+public class GenericMethodExample {
+    public static <T> void printItem(T item) {
+        System.out.println(item);
+    }
+
+    public static void main(String[] args) {
+        printItem(100);       // ✅ Works with Integer
+        printItem("Hello");   // ✅ Works with String
+        printItem(10.5);      // ✅ Works with Double
+    }
+}
+```
+
+* Generic Class
+
+```java
+class Box<T> {
+    private T item;
+
+    public void setItem(T item) {
+        this.item = item;
+    }
+
+    public T getItem() {
+        return item;
+    }
+}
+
+public class GenericClassExample {
+    public static void main(String[] args) {
+        Box<String> stringBox = new Box<>();
+        stringBox.setItem("Hello");
+        System.out.println(stringBox.getItem()); // ✅ Output: Hello
+
+        Box<Integer> intBox = new Box<>();
+        intBox.setItem(100);
+        System.out.println(intBox.getItem()); // ✅ Output: 100
+    }
+}
+```
