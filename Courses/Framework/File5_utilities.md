@@ -42,3 +42,16 @@ operation while executing automation code. (this will end up in slow
 execution of automation script)
 
 ![alt text](image-9.png)
+
+## Log Utility
+
+We are going to enable our automation framework to have a logging system in
+place, so that we can track record of what's happening behind the scene within our
+framework.
+There are two ways we can keep our logging to work
+1. Outputting our log to an external datasource/file
+2. Outputting our log to console
+
+These logs are especially handy if we want to audit our log in future or if we require
+the file to be handed over to some team which don't have direct access to our system
+by any means
