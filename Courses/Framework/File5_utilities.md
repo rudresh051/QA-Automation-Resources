@@ -45,13 +45,27 @@ execution of automation script)
 
 ## Log Utility
 
-We are going to enable our automation framework to have a logging system in
-place, so that we can track record of what's happening behind the scene within our
+We are going to enable our automation framework to have a logging system in  
+place, so that we can track record of what's happening behind the scene within our  
 framework.
 There are two ways we can keep our logging to work
 1. Outputting our log to an external datasource/file
 2. Outputting our log to console
 
-These logs are especially handy if we want to audit our log in future or if we require
-the file to be handed over to some team which don't have direct access to our system
+These logs are especially handy if we want to audit our log in future or if we require  
+the file to be handed over to some team which don't have direct access to our system  
 by any means
+
+A Logger Utility in a Selenium framework is a helper class that handles logging test execution steps, errors, info, warnings, and debug messages to the console or a file. It's essential for debugging, traceability, and analyzing test runs — especially in large automation projects.
+
+### Why Use LoggerUtility?
+
+* Helps track test execution flow  
+* Makes debugging easier when tests fail  
+* Provides clean reports/log files  
+* Centralizes logging configuration (no need to add System.out.println() everywhere)
+
+### Common Logging Libraries:
+* Java: log4j, SLF4J, java.util.logging
+* Python: logging module
+* JavaScript: winston, log4js
