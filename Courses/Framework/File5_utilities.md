@@ -44,19 +44,36 @@ execution of automation script)
 ![alt text](image-9.png)
 
 ## Log Utility
+IN COMPUTING, A LOGFILE IS A FILE THAT RECORDS EITHER EVENTS  
+THAT OCCUR IN AN OPERATING SYSTEM OR OTHER SOFTWARE RUNS,  
+OR MESSAGES BETWEEN DIFFERENT USERS OF A COMMUNICATION  
+SOFTWARE.
+
+Many Operating Systems, Software Frameworks, And Programs include a logging system.
 
 We are going to enable our automation framework to have a logging system in  
 place, so that we can track record of what's happening behind the scene within our  
 framework.
 There are two ways we can keep our logging to work
-1. Outputting our log to an external datasource/file
-2. Outputting our log to console
+1. **Outputting our log to an external datasource/file**
+2. **Outputting our log to console**
 
+### External File
 These logs are especially handy if we want to audit our log in future or if we require  
 the file to be handed over to some team which don't have direct access to our system  
 by any means
 
-A Logger Utility in a Selenium framework is a helper class that handles logging test execution steps, errors, info, warnings, and debug messages to the console or a file. It's essential for debugging, traceability, and analyzing test runs — especially in large automation projects.
+### Console Logs
+
+These logs come handy while we execute our test framework via any CI  
+tools, the CI tools are intelligent enough the console output and keep  
+a track record of each and every run by itself.
+
+
+A Logger Utility in a Selenium framework is a helper class that handles logging test   
+execution steps, errors, info, warnings, and debug messages to the console or a file.   
+It's essential for debugging, traceability, and analyzing test runs — especially in   
+large automation projects.
 
 ### Why Use LoggerUtility?
 
@@ -66,6 +83,7 @@ A Logger Utility in a Selenium framework is a helper class that handles logging 
 * Centralizes logging configuration (no need to add System.out.println() everywhere)
 
 ### Common Logging Libraries:
+
 * Java: log4j, SLF4J, java.util.logging
 * Python: logging module
 * JavaScript: winston, log4js
